@@ -3,101 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pivotbrowser</title>
+    <title>PivotBrowser</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background: #fff;
-            color: #000;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
-        header, footer {
-            width: 100%;
-            padding: 1em 0;
-            background: #fff;
-            position: fixed;
-        }
-        header {
-            top: 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        header .logo {
-            margin-left: 1em;
-            font-weight: 700;
-            font-size: 2.5em;
-            background: linear-gradient(45deg, #667eea, #764ba2, #8e44ad, #2980b9);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: gradientText 3s ease infinite;
-        }
-        footer {
-            bottom: 0;
-            text-align: center;
-            padding: 1em 0;
-        }
-        footer p {
-            font-weight: 400;
-            font-size: 1.2em;
-            margin: 0;
-            color: #000;
-        }
-        .content {
-            text-align: center;
-            animation: fadeInUp 2s ease-in-out;
-            padding-top: 6em;
-        }
-        .content h2 {
-            font-weight: 700;
-            font-size: 2em;
-            margin: 0.5em 0;
-            color: #000;
-        }
-        .content p {
-            font-weight: 400;
-            font-size: 1.3em;
-            margin: 0.5em 0;
-            color: #000;
-        }
-        .content .coming-soon {
-            font-weight: 700;
-            font-size: 2em;
-            margin: 0;
-            color: #000;
-        }
-        @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes gradientText {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">pivotbrowser</div>
+        <div class="container">
+            <div class="logo">pivotbrowser</div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#use-cases">Use Cases</a>
+                <a href="#pricing">Pricing</a>
+            </nav>
+        </div>
     </header>
-    
-    <div class="content">
-        <h2>Engineered to provide speed and memory efficiency in multi-session browsing.</h2>
-        <p>Experience unparalleled browsing with our innovative multi-session management.</p>
-        <p>Switch seamlessly between multiple web sessions and proxies across tabs for enhanced privacy and efficiency.</p>
-        <p class="coming-soon">Coming Soon</p>
-    </div>
-    
+
+    <section id="hero">
+        <div class="container">
+            <h1>Experience Next-Level Multi-Session Browsing</h1>
+            <p>Fast, efficient, and secure. PivotBrowser revolutionizes the way you browse with multi-session management.</p>
+            <a href="#features" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-box">
+                <div class="feature">
+                    <h3>Tab Management</h3>
+                    <p>PivotBrowser's tab management allows you to create and manage multiple tabs with isolated sessions and proxies, ensuring each tab operates independently.</p>
+                </div>
+                <div class="feature">
+                    <h3>Proxy Management</h3>
+                    <p>Manage proxies from multiple providers seamlessly. Quickly switch between proxies to maintain your privacy and access geo-restricted content.</p>
+                </div>
+                <div class="feature">
+                    <h3>Profile Management</h3>
+                    <p>Handle multiple profiles for different sessions, automating logins and maintaining separate browsing contexts effortlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="step-box">
+                <div class="step">
+                    <h3>Step 1</h3>
+                    <p>Download and install PivotBrowser. Follow the easy installation steps to get started quickly.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 2</h3>
+                    <p>Configure your proxies and profiles. Load your proxy lists and create profiles for different browsing needs.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 3</h3>
+                    <p>Start browsing with isolated sessions. Open multiple tabs, each with its own session, proxy, and profile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits">
+        <div class="container">
+            <h2>Benefits</h2>
+            <div class="benefit-box">
+                <div class="benefit">
+                    <h3>Privacy and Security</h3>
+                    <p>Keep your online activities private and secure by using different proxies and sessions for each tab. Prevent tracking and data leaks.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Efficiency and Speed</h3>
+                    <p>Experience fast browsing without sacrificing performance. Our efficient session management ensures minimal resource usage.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Enhanced Productivity</h3>
+                    <p>Manage multiple accounts and tasks simultaneously without logging in and out repeatedly. Streamline your workflow and boost productivity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="use-cases">
+        <div class="container">
+            <h2>Use Cases</h2>
+            <div class="use-case-box">
+                <div class="use-case">
+                    <h3>Ticket Purchasing</h3>
+                    <p>Use PivotBrowser to manage multiple ticket purchasing sessions simultaneously. Ensure you never miss out on limited-time offers and events.</p>
+                </div>
+                <div class="use-case">
+                    <h3>Social Media Management</h3>
+                    <p>Manage multiple social media accounts with ease. Post, comment, and engage across different platforms without switching profiles.</p>
+                </div>
+                <div class="use-case">
+                    <h3>Market Research</h3>
+                    <p>Conduct market research using different sessions to access geo-restricted data and maintain anonymity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <p>Stay tuned for our affordable and flexible pricing plans. Coming soon!</p>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 pivotbrowser. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 PivotBrowser. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
